@@ -1,0 +1,16 @@
+@font-face{
+    font-family: fuente-titulo;
+    src:url(fuentes/fuente-merriweather/Merriweather-Bold.ttf);
+}
+@font-face{
+    font-family: fuente-subtitulo;
+    src:url(fuentes/fuente-merriweather/Merriweather-Regular.ttf);
+}
+@font-face{
+    font-family: fuente-parrafo;
+    src:url(fuentes/san-free.ttf);
+}
+@font-face{
+    font-family: fuente-parrafo-negrita;
+    src:url(fuentes/san-free.ttf);
+}

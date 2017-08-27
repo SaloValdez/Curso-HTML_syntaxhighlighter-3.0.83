@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Diseño Web</title>
+    <link rel="stylesheet" href="fuentes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link type="text/css" rel="stylesheet" href="css/SyntaxHighlighter.css">
+    <script src="/syntaxhighlighter/js/shCore.js"></script>  
+<script src="/syntaxhighlighter/js/shBrushJava.js"></script>  
+<script src="syntaxhighlighter/js/shBrushXml.js"></script> 
+   
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: fuente-parrafo;
+        }
+        
+        .contenedor {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        body {
+            background: #e8fff6;
+        }
+        
+        header {
+            background: #2c3e50;
+            width: 100%;
+            padding: 20px;
+            /*flex box*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        header .logo {
+            color: #fff;
+            font-size: 30px;
+        }
+        
+        header .logo img {
+            width: 50px;
+            vertical-align: top;
+        }
+        
+        header .logo a {
+            color: #fff;
+            text-decoration: none;
+            line-height: 50px;
+        }
+        
+        header nav {
+            background-color: #fd7500;
+            width: 50%;
+            /*flex box*/
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        header nav a {
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            /*flex box*/
+            flex-grow: 1;
+        }
+        
+        header nav a:hover {
+            background: #f2c59e;
+        }
+        
+        code {
+            color: #C7254E;
+            background-color: #F9F2F4;
+            font-family: fuente-titulo;
+        }
+        
+        h3 {
+            font-family: fuente-subtitulo;
+            color: #fb0087
+        }
+        
+        @media screen and (max-width: 980px) {
+            .contenedor {
+                flex-direction: column;
+            }
+            header {
+                flex-direction: column;
+                padding: 0;
+            }
+            header .logo {
+                margin: 20px 0;
+            }
+            header nav {
+                width: 100%;
+            }
+            aside {
+                flex-direction: row;
+                flex: 0;
+            }
+            aside .widget {
+                flex-grow: 1;
+            }
+        }
+        
+        @media screen and (max-width: 470px) {
+            header nav {
+                width: 100%;
+                /*flex box*/
+                display: flex;
+                flex-direction: column;
+            }
+            header nav a {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body >
+
+    <div class="contenedor">
+
+        <header>
+
+            <div class="logo">
+                <img src="img/logo.jpg" alt="">
+                <a href="#">Diseño Web</a>
+            </div>
+            <nav>
+                <a href="#">Formatos Texto</a>
+                <a href="#">Hipervinculos</a>
+                <a href="#">Estilos CSS</a>
+                <a href="#">Tablas</a>
+
+            </nav>
+        </header>
+        <sectio class="seccionA">
+            <center>
+                <h1>Formatos de texto</h1>
+            </center>
+            <div>
+                <h3>Las etiquetas de parrafo <code>&ltp&gt ...&lt/p&gt</code></h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, maiores est error adipisci praesentium officia accusamus ipsa similique, debitis delectus officiis atque. Tenetur totam, ab voluptatum accusantium nihil est hic.
+            </div>
+
+        </sectio>
+        <sectio class="seccionB">
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, autem accusantium repudiandae, sunt doloribus perferendis quasi nobis labore unde maxime saepe, mollitia quae, sed iure ex aperiam harum exercitationem fuga.
+            </div>
+
+        </sectio>
+
+<pre name="code" class="java">  
+... some java code here ...  
+//esto es un codigo
+
+</pre>  
+
+
+
+
+    </div>
+    <script language="javascript">  
+dp.SyntaxHighlighter.HighlightAll('code');<br></script>  
+
+</body>
+
+</html>
